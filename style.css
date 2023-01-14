@@ -9,68 +9,67 @@
 * {
   box-sizing: border-box;
 }
-p {
+body {
   font-family: "Roboto", sans-serif;
+  font-size: 18px;
 }
 .h1 {
-  font-size: xx-large;
-  font-family: "Roboto", sans-serif;
-  max-width: 500px;
+  font-size: 36px;
+  width: 577px;
   margin-bottom: 40px;
-  font-weight: bold;
+  font-weight: 700;
 }
 .h2 {
-  font-size: large;
-  font-family: "Roboto", sans-serif;
+  font-size: 18px;
   margin-bottom: 40px;
+  font-weight: 700;
 }
 .h2_2 {
-  font-size: large;
-  font-family: "Roboto", sans-serif;
+  font-size: 36px;
   margin-bottom: 10px;
-  font-weight: bold;
+  font-weight: 700;
 }
 .h2_3 {
-  font-size: xx-large;
-  font-family: "Roboto", sans-serif;
-  width: 100%;
-  margin-bottom: 40px;
-  font-weight: bold;
+  font-size: 36px;
+  margin-bottom: 82px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
 }
 h3 {
   font-weight: bold;
+  margin-top: 10px;
 }
 section {
-  min-height: 600px;
+  padding: 60px 0;
 }
 .container {
   display: flex;
   width: 100%;
   margin: auto;
-  position: relative;
   padding: 10px;
 }
 .section_1 {
   display: flex;
-  position: relative;
   height: 100vh;
   width: 100vw;
   background-image: url(koncert1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 .img {
   border-radius: 50%;
 }
 .nav_bar {
+  display: flex;
+  align-content: center;
+  height: 50px;
   width: 100%;
   position: fixed;
   top: 0;
   color: white;
   font-weight: bold;
-  top: 0;
   background-color: rgba(83, 82, 82, 1);
-  padding: 10px 0px;
   z-index: 2;
 }
 .nav {
@@ -79,7 +78,7 @@ section {
   justify-content: flex-start;
 }
 .nav > li {
-  margin: 0 5px;
+  margin: 0 20px;
 }
 .shade {
   display: flex;
@@ -102,7 +101,7 @@ section {
 .margin_top {
   margin-top: 50px;
 }
-.pracownik {
+.employee {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -112,13 +111,12 @@ section {
   flex-direction: column;
 }
 .img {
-  width: 200px;
+  width: 197px;
   aspect-ratio: 1;
   border-radius: 50%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
 }
 .img_p1 {
   background-image: url(pracownik_1.jpg);
@@ -127,81 +125,72 @@ section {
   background-image: url(pracownik_2.jpg);
 }
 
-.opis {
-  max-width: 75%;
+.description {
+  width: 75%;
 }
 .blue {
   background-color: #405d78;
 }
-.uslugi {
+.services {
   display: grid;
-  grid-template-columns: 330px;
-  grid-template-rows: 200px 200px 200px 200px 200px 200px;
-  gap: 50px;
+  grid-template-columns: 339px;
+  grid-template-rows: 330px 330px 330px 330px 330px 330px;
+  gap: 63px;
   justify-content: center;
   align-content: center;
 }
-.uslugi > div {
+.services > div {
   display: flex;
   background-color: rgb(255, 255, 255);
-  font-family: "Roboto", sans-serif;
   text-align: center;
   justify-content: center;
   padding: 5px;
+  transition-duration: 0.5s;
+  transition-property: all;
 }
 footer {
-  background-color: rgba(83, 82, 82, 1);
-  padding: 10px;
-}
-#footer {
   display: flex;
   align-content: center;
-  flex-wrap: wrap;
+  background-color: rgba(83, 82, 82, 1);
+  padding: 71px;
+}
+#footer {
+  align-items: center;
 }
 i {
   font-size: xx-large;
   margin-left: 10px;
 }
-.button_oferta {
+.button_offer {
   background-color: rgba(255, 255, 255, 0);
   color: rgb(255, 255, 255);
   border: 2px solid rgb(255, 255, 255);
-  width: 150px;
+  width: 164px;
   height: 40px;
   text-align: center;
-  font-family: "Roboto", sans-serif;
   font-size: medium;
+  transition-duration: 1s;
+  transition-property: all;
 }
 html {
   scroll-behavior: smooth;
 }
-a:link {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-}
-a:visited {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-}
-a:hover {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-}
+a:link,
+a:visited,
+a:hover,
 a:active {
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
-.button_oferta:hover {
+.button_offer:hover {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
-  transition-duration: 1s;
 }
 .disabled:hover {
   cursor: not-allowed;
 }
-.uslugi > div:hover {
+.services > div:hover {
   transform: scale(1.05);
-  transition-duration: 0.5s;
 }
 #new {
   position: relative;
@@ -218,21 +207,21 @@ a:active {
   height: 24px;
 }
 @media screen and (min-width: 768px) {
-  .uslugi {
-    grid-template-columns: 280px 280px;
-    grid-template-rows: 200px 200px 200px;
+  .services {
+    grid-template-columns: 339px 339px;
+    grid-template-rows: 330px 330px 330px;
   }
   .nav {
     display: flex;
   }
-  .pracownik {
+  .employee {
     flex-direction: row;
   }
-  .pracownik:nth-child(even) {
+  .employee:nth-child(even) {
     flex-direction: row;
     text-align: left;
   }
-  .pracownik:nth-child(odd) {
+  .employee:nth-child(odd) {
     flex-direction: row-reverse;
     text-align: right;
   }
@@ -242,11 +231,11 @@ a:active {
     align-items: center;
   }
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1024px) {
   .container {
     width: 960px;
   }
-  .uslugi {
+  .services {
     grid-template-columns: 250px 250px 250px;
     grid-template-rows: 200px 200px;
   }

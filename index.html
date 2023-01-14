@@ -15,7 +15,17 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section class="section_1" id="firma">
+    <header class="nav_bar">
+      <nav class="container between">
+        <a href="#company">Janowski S. A.</a>
+        <ul class="nav">
+          <li><a href="#about">O nas</a></li>
+          <li><a href="#offer">Oferta</a></li>
+          <li><a href="#conact" class="disabled">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="section_1" id="company">
       <div class="shade">
         <div class="white container">
           <div class="headers_s1">
@@ -24,8 +34,8 @@
             <div>
               <button
                 type="button"
-                class="button_oferta"
-                onclick="location.href='#oferta'"
+                class="button_offer"
+                onclick="location.href='#offer'"
               >
                 Oferta
               </button>
@@ -33,23 +43,13 @@
           </div>
         </div>
       </div>
-      <div class="nav_bar">
-        <div class="container between">
-          <a href="#firma">Janowski S. A.</a>
-          <ul class="nav">
-            <li><a href="#o_nas">O nas</a></li>
-            <li><a href="#oferta">Oferta</a></li>
-            <li><a href="#kontakt" class="disabled">Kontakt</a></li>
-          </ul>
-        </div>
-      </div>
     </section>
     <section>
-      <div class="container col" id="o_nas">
+      <div class="container col" id="about">
         <h2 class="h1 margin_top">Nasi specjaliści</h2>
-        <div class="pracownik between">
+        <div class="employee between">
           <div class="img img_p1"></div>
-          <div class="opis">
+          <div class="description">
             <h2 class="h2_2">Bartłomiej Janowski</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
@@ -61,9 +61,9 @@
             </p>
           </div>
         </div>
-        <div class="pracownik between">
+        <div class="employee between margin_top">
           <div class="img img_p2"></div>
-          <div class="opis">
+          <div class="description">
             <h2 class="h2_2">Bartosz Jankowski</h2>
             <p>
               Lorem ipsum dolor it amet, consectetur adipiscing elit. Sed libero
@@ -78,17 +78,16 @@
       </div>
     </section>
     <section class="blue">
-      <div class="container col" id="oferta">
+      <div class="container col" id="offer">
         <h2 class="h2_3 margin_top">Czym zajmuje się nasza firma?</h2>
-        <div class="uslugi">
+        <div class="services">
           <div id="new" class="col">
-            <h2 class="h2_2">NOWOŚĆ!</h2>
+            <h3>NOWOŚĆ!</h3>
             <h3>Organizacja koncertów -</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et
               mauris et libero fermentum mattis. Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit. Aenean et mauris et libero fermentum
-              mattis.
+              consectetur adipiscing elit.
             </p>
           </div>
           <div class="col">
@@ -96,8 +95,7 @@
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et
               mauris et libero fermentum mattis. Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit. Aenean et mauris et libero fermentum
-              mattis.
+              consectetur adipiscing elit.
             </p>
           </div>
           <div class="col">
@@ -105,8 +103,7 @@
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et
               mauris et libero fermentum mattis. Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit. Aenean et mauris et libero fermentum
-              mattis.
+              consectetur adipiscing elit.
             </p>
           </div>
           <div class="col">
@@ -114,8 +111,7 @@
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et
               mauris et libero fermentum mattis. Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit. Aenean et mauris et libero fermentum
-              mattis.
+              consectetur adipiscing elit.
             </p>
           </div>
           <div class="col">
@@ -123,8 +119,7 @@
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et
               mauris et libero fermentum mattis. Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit. Aenean et mauris et libero fermentum
-              mattis.
+              consectetur adipiscing elit.
             </p>
           </div>
           <div class="col">
@@ -132,15 +127,14 @@
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et
               mauris et libero fermentum mattis. Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit. Aenean et mauris et libero fermentum
-              mattis.
+              consectetur adipiscing elit.
             </p>
           </div>
         </div>
       </div>
     </section>
     <footer>
-      <div class="container col" id="footer">
+      <div class="container between" id="footer">
         <div>Janowski S. A.</div>
         <div>
           <i class="fa-brands fa-instagram"></i>
