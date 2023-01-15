@@ -152,10 +152,11 @@ footer {
   display: flex;
   align-content: center;
   background-color: rgba(83, 82, 82, 1);
-  padding: 71px;
+  height: 147px;
 }
 #footer {
   align-items: center;
+  flex-direction: column;
 }
 i {
   font-size: xx-large;
@@ -224,6 +225,9 @@ a:active {
   .employee:nth-child(odd) {
     flex-direction: row-reverse;
     text-align: right;
+  }
+  footer {
+    height: 71px;
   }
   #footer {
     flex-direction: row;
